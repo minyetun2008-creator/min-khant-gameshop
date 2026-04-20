@@ -181,3 +181,16 @@ color:#000;
 .category{
 transition:0.4s;
 }
+
+.banner{
+width:100%;
+text-align:center;
+}
+
+.banner img{
+width:100%;
+max-height:900px;
+object-fit:cover;
+border-bottom:2px solid #38bdf8;
+box-shadow:0 0 20px #38bdf8;
+}
