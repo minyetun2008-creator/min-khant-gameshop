@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <header>
+<img src="https://i.ibb.co/1tNZ4dgX/file-0000000059187208931d8a5e5d8e9dc5.png">
+<h1>Min Khant Game Shop</h1>
+</header>
+<div class="filter-bar">
+  <button onclick="filterItems('ALL')" class="active">ALL</button>
+  <button onclick="filterItems('MLBB',this)">MLBB</button>
+  <button onclick="filterItems('PUBG',this)">PUBG UC</button>
+  <button onclick="filterItems('SMALL',this)">SMALL</button>
+  <button onclick="filterItems('MEDIUM',this)">MEDIUM</button>
+  <button onclick="filterItems('LARGE',this)">LARGE</button>
+  <button onclick="filterItems('EPIC',this)">EPIC</button>
+</div>
+<div class="container" id="shop"></div>
+
+<div id="orderForm">
+<div class="payment">Payment Wave - 09421625172</div>
+
+<input type="text" id="gameId" placeholder="Game ID">
+<input type="text" id="serverId" placeholder="Server ID (MLBB only)">
+<input type="text" id="phone" placeholder="ငွေလွှဲလိုက်သောဖုန်းနံပါတ်">
+<input type="text" id="trx" placeholder="Transaction ID">
+
+<button onclick="confirmOrder()">အတည်ပြုမည်</button>
+<button onclick="cancelOrder()">ပယ်ဖျက်ရန်</button>
+</div>
+<div id="successBox">
+  <div class="success-content">
+    <div class="loader"></div>
+    <div class="check">🏆</div>
+    <h2>ORDER SUCCESS</h2>
+    <p>Processing Complete...</p>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

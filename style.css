@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body{
+margin:0;
+font-family:'Orbitron',sans-serif;
+background:#020617;
+color:#0ff;
+}
+
+header{
+text-align:center;
+padding:15px;
+background:#020617;
+box-shadow:0 0 20px #00f0ff;
+}
+
+header img{
+width:100%;
+max-height:900px;
+object-fit:cover;
+}
+
+h1{
+color:#00f0ff;
+text-shadow:0 0 15px #00f0ff;
+}
+
+.container{
+padding:15px;
+}
+
+.category{
+margin-bottom:20px;
+}
+
+.card{
+background:#020617;
+border:1px solid #00f0ff;
+padding:10px;
+margin:5px;
+border-radius:10px;
+box-shadow:0 0 10px #00f0ff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+button{
+background:#00f0ff;
+border:none;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#orderForm{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#020617;
+padding:20px;
+border:2px solid #00f0ff;
+display:none;
+width:90%;
+max-width:400px;
+box-shadow:0 0 20px #00f0ff;
+}
+
+input{
+width:100%;
+padding:8px;
+margin:5px 0;
+background:#000;
+border:1px solid #00f0ff;
+color:#0ff;
+}
+
+.payment{
+text-align:center;
+margin-bottom:10px;
+font-size:18px;
+color:#00f0ff;
+}
+
+
+#successBox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#020617,#000);
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+pointer-events:none;
+transition:0.5s;
+z-index:999;
+}
+
+#successBox.show{
+opacity:1;
+pointer-events:auto;
+}
+
+/* Content */
+.success-content{
+text-align:center;
+color:#00f0ff;
+}
+
+/* LOADING SPINNER */
+.loader{
+width:60px;
+height:60px;
+border:4px solid #0ff;
+border-top:4px solid transparent;
+border-radius:50%;
+margin:auto;
+animation:spin 1s linear infinite;
+}
+
+/* CHECK ICON */
+.check{
+font-size:70px;
+color:#00ffcc;
+text-shadow:0 0 25px #00ffcc;
+display:none;
+animation:pop 0.5s ease;
+}
+
+/* TEXT */
+.success-content h2{
+margin-top:10px;
+text-shadow:0 0 20px #00f0ff;
+}
+
+/* ANIMATIONS */
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+@keyframes pop{
+0%{transform:scale(0);}
+70%{transform:scale(1.3);}
+100%{transform:scale(1);}
+}
+
+.filter-bar{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin:15px;
+}
+
+.filter-bar button{
+background:transparent;
+border:1px solid #00f0ff;
+color:#00f0ff;
+padding:8px 12px;
+border-radius:20px;
+cursor:pointer;
+box-shadow:0 0 10px #00f0ff;
+transition:0.3s;
+}
+
+.filter-bar button:hover{
+background:#00f0ff;
+color:#000;
+}
+
+.filter-bar .active{
+background:#00f0ff;
+color:#000;
+}
+
+.category{
+transition:0.4s;
+}
